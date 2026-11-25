@@ -3,7 +3,6 @@ from pygame import Surface, Rect
 from pygame.ftfont import Font
 from code.Const import WIN_WIDTH, C_ORANGE, MENU_OPTION, C_WHITE, C_YELLOW
 
-
 class Menu:
 
     def __init__(self, window):
@@ -11,7 +10,7 @@ class Menu:
         self.surf = pygame.image.load('./asset/MenuBg.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
-    def run(self, ):
+    def run(self):
         menu_option = 0
         pygame.mixer.music.load('./asset/Menu.mp3')
         pygame.mixer.music.play(-1)

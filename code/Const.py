@@ -161,4 +161,4 @@ SCORE_POS = {'Title': (WIN_WIDTH / 2, 50),
              7: (WIN_WIDTH / 2, 250),
              8: (WIN_WIDTH / 2, 270),
              9: (WIN_WIDTH / 2, 290),
-            }
+             }

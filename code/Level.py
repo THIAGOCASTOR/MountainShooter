@@ -10,7 +10,6 @@ from code.EntityFactory import EntityFactory
 from code.EntityMediator import EntityMediator
 from code.Player import Player
 
-
 class Level:
 
     def __init__(self, window: Surface, name: str, game_mode: str, player_score: list[int]):
@@ -32,6 +31,7 @@ class Level:
 
     def run(self, player_score: list[int]):
         pygame.mixer_music.load(f'./asset/{self.name}.mp3')
+        pygame.mixer_music.set_volume(0.3)
         pygame.mixer_music.play(1)
         clock = pygame.time.Clock()
         while True:
